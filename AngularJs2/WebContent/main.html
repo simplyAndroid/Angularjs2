@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="advance">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Advance and Responsive</title>
+
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+	<div id="wrapper">
+
+		<div id="head" ng-controller="logo">
+
+
+			<img src="{{imagelogo}}">
+
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Select Vechicle</a></li>
+				<li><a href="#">Shipping</a></li>
+				<li><a href="#">Deals</a></li>
+				<li><a href="#">Carreer</a></li>
+			</ul></div>
+
+
+	
+		
+    <div id="myCarousel" class="carousel slide" data-interval="2000" data-ride="carousel">
+    	<!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li class="slide-one active"></li>
+            <li class="slide-two"></li>
+            <li class="slide-three"></li>
+             <li class="slide-four"></li>
+        </ol>   
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+        
+            <div class="active item" ng-controller="car1">
+                
+         		<div class="carousel-caption">
+                  <a href="http://www.shibir.org.bd/"><img ng-src="{{imagecar1}}"></a>
+                </div></div>
+            
+            <div class="item" ng-controller="car2">
+               
+                <div class="carousel-caption">
+                  <img ng-src="{{imagecar2}}">
+                </div></div>
+            
+            <div class="item" ng-controller="car3">
+                
+                <div class="carousel-caption">
+                
+                <img ng-src="{{imagecar3}}">
+                </div> </div>
+            
+            <div class="item" ng-controller="car4">
+                
+      <div class="carousel-caption">
+                <img ng-src="{{imagecar4}}">
+                <!-- <img src="images/car4.gif" style="width:400px; height:400px;" alt="car4"> -->
+                </div></div>
+            </div>
+        
+        <!-- Carousel nav -->
+        <a class="carousel-control left">
+            <span id="left1"  ng-click="prev()" class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a  class="carousel-control right">
+            <span id="r"  ng-click="next()" class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+<section id="product_information" ng-controller="Myvalue">
+<div class="innerDiv" ng-model="product_info">
+<p>{{product_info}}</p>
+<img ng-src={{image1}}>
+
+</div>
+<img ng-src={{image1}}>
+<img ng-src={{image2}}>
+
+
+<button id="btnnext" ng-click="next()">Submit</button><br>
+<button id="btnpre" ng-click="previous()">Submit</button>
+</section>
+
+
+	</div>
+</body>
+</html>
